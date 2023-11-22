@@ -1,5 +1,6 @@
 const express=require("express"); // in clude axpress
 const app=express(); 
+const fs=require("fs");
 app.use(express.urlencoded());    // encoded the body of the form that request this server
 app.use(express.static("./"));    // to access the static files 
 
@@ -70,6 +71,11 @@ app.post("/del",async(req,res)=>{
     await courses.deleteOne({title:title});
     res.end("done");
 
+})
+app.post("/",(req,res)=>{
+    const data=fs.readFileSync("./index.html","utf8");
+    res.end(data);
+    
 })
 
 
