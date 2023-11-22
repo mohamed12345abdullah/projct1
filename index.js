@@ -78,6 +78,10 @@ app.post("/",(req,res)=>{
     
 })
 
+app.get("/",(req,res)=>{
+    res.end(" hello");
+})
+
 
    
 app.post("/replace",async(req,res)=>{
