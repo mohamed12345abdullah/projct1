@@ -5,7 +5,7 @@
     "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "scripts": {
     "app": "node index.js"
