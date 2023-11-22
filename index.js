@@ -72,7 +72,7 @@ app.post("/del",async(req,res)=>{
     res.end("done");
 
 })
-app.post("/",(req,res)=>{
+app.get("/",(req,res)=>{
     const data=fs.readFileSync("./index.html","utf8");
     res.end(data);
     
