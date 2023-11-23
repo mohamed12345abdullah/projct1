@@ -2,7 +2,7 @@ const express=require("express"); // in clude axpress
 const app=express(); 
 const fs=require("fs");
 app.use(express.urlencoded());    // encoded the body of the form that request this server
-// app.use(express.static("./"));    // to access the static files 
+ app.use(express.static("./"));    // to access the static files 
 
 // middleware is a function that have  access to the request object and
 // the response object and the next function
