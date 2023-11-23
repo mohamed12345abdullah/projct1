@@ -73,9 +73,9 @@ app.post("/del",async(req,res)=>{
 
 })
 app.get("/",(req,res)=>{
-    const data=fs.readFileSync("./mail.html","utf8",(e)=>{
-     if (e){res.end(e);}
-    });
+    // const data=fs.readFileSync("./mail.html","utf8",(e)=>{
+     // if (e){res.end(e);}
+    // });
     // console.log(data);
     res.write("data");
     // res.write( ` <!DOCTYPE html>
