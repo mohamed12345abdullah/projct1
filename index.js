@@ -75,7 +75,7 @@ app.post("/del",async(req,res)=>{
 app.get("/",(req,res)=>{
     const data=fs.readFileSync("./mail.html","utf8");
     // console.log(data);
-    res.write(data);
+    res.write("data");
     // res.write( ` <!DOCTYPE html>
     // <html lang="en">
     // <head>
