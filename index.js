@@ -72,15 +72,15 @@ app.post("/del",async(req,res)=>{
     res.end("done");
 
 })
-app.get("/",(req,res)=>{
-    const data=fs.readFileSync("./index.html","utf8");
-    res.end(`  <nav>
-        <a href="http://127.0.0.4:8080/courses"> get </a>
-        <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
-    </nav>
-`);
+// app.get("/",(req,res)=>{
+//     const data=fs.readFileSync("./index.html","utf8");
+//     res.end(`  <nav>
+//         <a href="http://127.0.0.4:8080/courses"> get </a>
+//         <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
+//     </nav>
+// `);
     
-})
+// })
 
 
    
