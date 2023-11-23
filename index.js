@@ -73,29 +73,27 @@ app.post("/del",async(req,res)=>{
 
 })
 app.get("/",(req,res)=>{
-    // const data=fs.readFileSync("./index.html","utf8");
-    res.end(`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add course </title>
-</head>
-<body>
-    <nav>
-        <a href="https://projct1.vercel.app/courses"> get courses </a>
-        <a href="addCourse.html"> add courses </a>
-        <a href="delete.html"> delete course </a>
-        <a href="replace.html"> replace courses </a>
-        <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
-    </nav>
-
+    const data=fs.readFileSync("./mail.html","utf8");
+    // console.log(data);
+    res.write(data);
+    // res.write( ` <!DOCTYPE html>
+    // <html lang="en">
+    // <head>
+    //     <meta charset="UTF-8">
+    //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //     <title>Add course </title>
+    // </head>
+    // <body>
+    //     <nav>
+    //         <a href="http://127.0.0.4:8080/courses"> get </a>
+    //         <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
+    //     </nav>
     
-    
-</body>
-</html>
-`);
-    
+        
+        
+    // </body>
+    // </html>`);
+res.end();
 })
 
 
