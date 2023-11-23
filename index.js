@@ -73,7 +73,7 @@ app.post("/del",async(req,res)=>{
 
 })
 app.get("/",(req,res)=>{
-    const data=fs.readFile("./mail.html","utf8",(e)=>{
+    const data=fs.readFile("delete.html","utf8",(e)=>{
      // if (e){res.end(e);}
     // });
     // console.log(data);
