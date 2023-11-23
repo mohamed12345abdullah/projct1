@@ -73,11 +73,16 @@ app.post("/del",async(req,res)=>{
 
 })
 app.get("/",(req,res)=>{
-    const data=fs.readFile("delete.html","utf8")
+   fs.readFileSync("mail.html","utf8",(err,data)=>{
+    if(err){
+     res.end(err);
+    }
+    res.end(data);
+   });
      // if (e){res.end(e);}
     // });
     // console.log(data);
-    res.write("data");
+    // res.write("data");
     // res.write( ` <!DOCTYPE html>
     // <html lang="en">
     // <head>
@@ -95,7 +100,7 @@ app.get("/",(req,res)=>{
         
     // </body>
     // </html>`);
-res.end();
+// res.end();
 })
 
 
