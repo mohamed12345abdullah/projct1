@@ -83,7 +83,7 @@ app.get("/",(req,res)=>{
 </head>
 <body>
     <nav>
-        <a href="http://127.0.0.4:8080/courses"> get </a>
+        <a href="https://projct1.vercel.app/courses"> get </a>
         <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
     </nav>
 
