@@ -73,12 +73,9 @@ app.post("/del",async(req,res)=>{
 
 })
 app.get("/",(req,res)=>{
-   fs.readFileSync("mail.html","utf8",(err,data)=>{
-    if(err){
-     res.end(err);
-    }
-    res.end(data);
-   });
+    console.log("read file is run");
+   const data=fs.readFileSync("mail.html","utf8");
+   res.end(data);
      // if (e){res.end(e);}
     // });
     // console.log(data);
