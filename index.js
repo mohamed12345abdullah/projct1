@@ -1,7 +1,7 @@
 const express=require("express"); // in clude axpress
 const app=express(); 
 const fs=require("fs");
-// app.use(express.urlencoded());    // encoded the body of the form that request this server
+app.use(express.urlencoded());    // encoded the body of the form that request this server
  // app.use(express.static("./"));    // to access the static files 
 
 // middleware is a function that have  access to the request object and
@@ -80,11 +80,11 @@ app.get("/",(req,res)=>{
  // {
  //  const data=fs.readFileSync("mail.html","utf8");
  //   res.end(data);
- }catch(e){console.log(e);}
-     if (e){res.end(e);}
-    });
-    console.log(data);
-    res.write("data");
+ // }catch(e){console.log(e);}
+ //     if (e){res.end(e);}
+ //    });
+    // console.log(data);
+    // res.write("data");
     res.write( ` <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -94,7 +94,13 @@ app.get("/",(req,res)=>{
     </head>
     <body>
         <nav>
-            <a href="http://127.0.0.4:8080/courses"> get </a>
+            <a href="https://projct3-1eujag0hq-abdullahs-projects-7b9e8abb.vercel.app/courses"> get </a>
+            <br>
+            <a href="delete.html"> delete course </a>
+            <br>
+            <a href="delete.html"> replace course </a>
+            <br>
+            <a href="addCourse.html"> add course </a>
             <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
         </nav>
     
