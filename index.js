@@ -1,10 +1,10 @@
 const express=require("express"); // in clude axpress
 const app=express(); 
 const fs=require("fs");
-// const path = require('path'); 
+const path = require('path'); 
 app.use(express.urlencoded());    // encoded the body of the form that request this server
  app.use(express.static("public"));    // to access the static files 
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use("./",express.static("./"));
 // middleware is a function that have  access to the request object and
