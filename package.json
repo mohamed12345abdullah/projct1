@@ -8,6 +8,6 @@
     "node": "18.x"
   },
   "scripts": {
-    "app": "node index.js"
+    "app": "nodemon index.js"
   }
 }
