@@ -80,11 +80,11 @@ app.get("/",(req,res)=>{
  // {
  //  const data=fs.readFileSync("mail.html","utf8");
  //   res.end(data);
- }catch(e){console.log(e);}
-     if (e){res.end(e);}
-    });
-    console.log(data);
-    res.write("data");
+ // }catch(e){console.log(e);}
+ //     if (e){res.end(e);}
+ //    });
+    // console.log(data);
+    // res.write("data");
     res.write( ` <!DOCTYPE html>
     <html lang="en">
     <head>
