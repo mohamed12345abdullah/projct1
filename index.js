@@ -76,33 +76,33 @@ app.get("/",(req,res)=>{
     console.log("read file is run");
  
  
- try
- {
-  const data=fs.readFileSync("mail.html","utf8");
-   res.end(data);
+ // try
+ // {
+ //  const data=fs.readFileSync("mail.html","utf8");
+ //   res.end(data);
  }catch(e){console.log(e);}
-     // if (e){res.end(e);}
-    // });
-    // console.log(data);
-    // res.write("data");
-    // res.write( ` <!DOCTYPE html>
-    // <html lang="en">
-    // <head>
-    //     <meta charset="UTF-8">
-    //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    //     <title>Add course </title>
-    // </head>
-    // <body>
-    //     <nav>
-    //         <a href="http://127.0.0.4:8080/courses"> get </a>
-    //         <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
-    //     </nav>
+     if (e){res.end(e);}
+    });
+    console.log(data);
+    res.write("data");
+    res.write( ` <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add course </title>
+    </head>
+    <body>
+        <nav>
+            <a href="http://127.0.0.4:8080/courses"> get </a>
+            <!-- <a href="https://projct3.vercel.app/courses"> get courses</a> -->
+        </nav>
     
         
         
-    // </body>
-    // </html>`);
-// res.end();
+    </body>
+    </html>`);
+res.end();
 })
 
 
